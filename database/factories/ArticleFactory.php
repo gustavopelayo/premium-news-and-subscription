@@ -19,6 +19,7 @@ class ArticleFactory extends Factory
         return [
             'name' => $this->faker->sentence(4),
             'topic' => $this->faker->word(),
+            'user_id' => \App\Models\User::inRandomOrder()->first()->id,
             'category_id' => \App\Models\Category::inRandomOrder()->first()->id,
             'tag_id' => \App\Models\Tag::inRandomOrder()->first()->id,
             'text' => $this->faker->paragraphs(4, true),

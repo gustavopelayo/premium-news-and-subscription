@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('topic');
             $table->unsignedBigInteger('category_id');
             $table->unsignedBigInteger('tag_id');
+            $table->unsignedBigInteger('user_id');
             $table->text('text');
             $table->timestamps();
         });
