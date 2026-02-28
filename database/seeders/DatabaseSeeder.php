@@ -25,6 +25,8 @@ class DatabaseSeeder extends Seeder
         $this->call(TagSeeder::class);
         $this->call(CategorySeeder::class);
         $this->call(ArticleSeeder::class);
+        $this->call(SubscriptionPlanSeeder::class);
+        $this->call(SubscriptionSeeder::class);
     }
 
 }
