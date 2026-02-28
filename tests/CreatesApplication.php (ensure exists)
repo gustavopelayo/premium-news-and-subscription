@@ -1,0 +1,11 @@
+class CreatesApplication
+{
+    use CreatesApplication;
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+        $this->artisan('migrate');
+        $this->artisan('db:seed');
+    }
+}
